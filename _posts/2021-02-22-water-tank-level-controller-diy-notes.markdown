@@ -8,7 +8,6 @@ categories: log
 先直接上代码看看代码高亮效果。
 
 ```c
-{% highlight c %}
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
@@ -232,6 +231,5 @@ static int run_server(void) {
 int main() {
     return run_server();
 }
-{% endhighlight %}
 ```
 
