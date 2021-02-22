@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 记录水塔液位控制器DIY过程
+title: 水塔液位控制器DIY记录
 email: z_h_a_o@wen-tao.com
 description: >- # this means to ignore newlines until "baseurl:"
   这是单独开的一个子域名博客，记录一件事而已，就是使用超声波测距模块整合到运行OpenWrt的路由器、米家智能网关，
