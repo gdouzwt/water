@@ -18,16 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: 记录水塔液位控制器DIY过程
+email: z_h_a_o@wen-tao.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  这是单独开的一个子域名博客，记录一件事而已，就是使用超声波测距模块整合到运行OpenWrt的路由器、米家智能网关，
+  实现的一个水塔液位自动控制系统，用于家中抽水机的控制。因为是有在使用的东西，就打算记录清楚一点，方便以后维护。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://water.zwt.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: gdouzwt
+github_username:  gdouzwt
 
 # Build settings
 theme: minima
