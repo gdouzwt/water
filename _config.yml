@@ -21,7 +21,7 @@
 title: 水塔液位控制器DIY记录
 email: z_h_a_o@wen-tao.com
 description: >- # this means to ignore newlines until "baseurl:"
-  这是单独开的一个子域名博客，记录一件事而已，就是使用超声波测距模块整合到运行OpenWrt的路由器、米家智能网关，
+  这是单独开的子域名博客，记录一件事而已，就是使用超声波测距模块整合到运行OpenWrt的路由器、米家智能网关，
   实现的一个水塔液位自动控制系统，用于家中抽水机的控制。因为是有在使用的东西，就打算记录清楚一点，方便以后维护。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://water.zwt.io" # the base hostname & protocol for your site, e.g. http://example.com
