@@ -1,11 +1,13 @@
 ---
 layout: post
-title:  "开发过程记录"
+title:  "运行在路由器端的TCP客户端代码"
 date:   2021-02-22 09:36:15 +0800
 categories: log
 ---
 
-先直接上代码看看代码高亮效果。
+这部分属于路由器端的代码，用 C 语言写的 TCP/UDP 客户端，运行环境是 OpenWrt Linux，路由器的操作系统有一些库可供使用，所以这些代码涉及的 API 不算是太底层。例如 libubox 里面的 uloop、usock，json-c，还有 openssl 都为编写应用的功能提供了便利。
+
+下面是在代码中添加注释的方式去说明它的实现逻辑。
 
 ```c
 #include <sys/socket.h>
@@ -15,10 +17,11 @@ categories: log
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <json-c/json.h>
-#include <libubox/uloop.h>
-#include <libubox/usock.h>
-#include <openssl/evp.h>
+// 上面是操作系统/C标准库
+#include <json-c/json.h>  // json-c 处理 json 的，解析/生成
+#include <libubox/uloop.h>  // uloop 是一个简单的事件回环(Event Loop)框架
+#include <libubox/usock.h> // usock 是对 socket API 的简单封装
+#include <openssl/evp.h>  // openssl 加密解密相关
 
 #define GROUP_SERVER_ADDR "224.0.0.50"
 #define UDP_SEND_PORT 9898
